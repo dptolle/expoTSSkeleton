@@ -1,0 +1,7 @@
+.eslintrc.ts
+.eslintrc.js
+metro.config.js
+metro.config.ts
+babel.config.js
+webpack.config.js
+webpack.config.ts
