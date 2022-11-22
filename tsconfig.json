@@ -1,7 +1,20 @@
 {
     "extends": "expo/tsconfig.base",
     "compilerOptions": {
-        "strict": true
+        "strict": true,
+        "jsx": "react-native",
+        "noEmit": true,
+        "target": "esnext",
+        "baseUrl": ".",
+        "paths": {
+            "@components/*": ["./src/components/*"],
+            "@navigation/*": ["./src/navigation/*"],
+            "@contexts/*": ["./src/contexts/*"],
+            "@models/*": ["./src/models/*"],
+            "@pages/*": ["./src/pages/*"],
+            "@hooks/*": ["./src/hooks/*"],
+            "@styles/*": ["./src/styles/*"]
+        }
     },
     "exclude": ["__tests__/**/*-test.ts", "./.eslintrc.js", "./.eslintrc.ts"],
     "include": ["./src/**/*"]
